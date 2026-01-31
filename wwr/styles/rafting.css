@@ -73,7 +73,6 @@ h2 {
     height: auto;
 }
 
-/* Hero H1 positioning - absolute on top of hero image */
 h1 {
     position: absolute;
     top: 20px;
@@ -87,7 +86,6 @@ h1 {
     z-index: 1;
 }
 
-/* Hero article positioning - absolute on top of hero image */
 .hero article {
     position: absolute;
     bottom: 20px;
@@ -104,10 +102,9 @@ h1 {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     z-index: 1;
     border: 2px solid var(--secondary-color);
-    /* Use the unused variable */
+
 }
 
-/* Float image to right inside article */
 .hero article img {
     float: right;
     width: 125px;
@@ -132,7 +129,6 @@ h1 {
     padding: 0;
 }
 
-/* Footer styles */
 footer {
     background-color: var(--primary-color);
     color: #fff;
@@ -146,7 +142,6 @@ footer p {
     margin-bottom: 15px;
 }
 
-/* Social media nav in footer */
 footer nav.socialmedia {
     display: flex;
     justify-content: center;
