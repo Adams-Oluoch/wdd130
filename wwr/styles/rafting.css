@@ -15,7 +15,8 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: var(--primary-color);
+    background-color: #fff;
 }
 
 header,
@@ -27,11 +28,12 @@ footer {
 
 header {
     background-color: var(--primary-color);
-    color: var(--accent2-color);
+    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    margin-bottom: 20px;
 }
 
 nav,
@@ -45,7 +47,14 @@ article {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+}
+
+h1 {
+    color: var(--accent1-color);
+}
+
+h2 {
+    color: var(--secondary-color);
 }
 
 .socialmedia a {
@@ -55,6 +64,7 @@ h2 {
 .hero {
     position: relative;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .hero img {
@@ -63,6 +73,7 @@ h2 {
     height: auto;
 }
 
+/* Hero H1 positioning - absolute on top of hero image */
 h1 {
     position: absolute;
     top: 20px;
@@ -70,22 +81,33 @@ h1 {
     padding: 16px;
     text-align: center;
     opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    font-size: 2rem;
+    z-index: 1;
 }
 
-.hero-article {
+/* Hero article positioning - absolute on top of hero image */
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 800px;
     display: flex;
     align-items: center;
     gap: 30px;
-    margin: 30px auto;
     padding: 25px;
     background-color: rgba(255, 255, 255, 0.92);
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-    max-width: 800px;
+    z-index: 1;
+    border: 2px solid var(--secondary-color);
+    /* Use the unused variable */
 }
 
+/* Float image to right inside article */
 .hero article img {
     float: right;
     width: 125px;
@@ -108,6 +130,27 @@ h1 {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+/* Social media nav in footer */
+footer nav.socialmedia {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .socialmedia a {
