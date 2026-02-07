@@ -20,11 +20,6 @@ body {
     line-height: 1.6;
 }
 
-.logo {
-    width: 200px;
-    height: auto;
-}
-
 header,
 main,
 footer {
@@ -35,23 +30,17 @@ footer {
 header {
     background-color: var(--primary-color);
     color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    margin-bottom: 20px;
     display: grid;
     grid-template-columns: auto 1fr;
+    align-items: center;
     gap: 20px;
-    max-width: 840px;
+    padding: 1rem;
+    margin-bottom: 20px;
 }
 
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
+.logo {
+    width: 200px;
+    height: auto;
 }
 
 nav {
@@ -69,6 +58,15 @@ nav a {
     font-weight: bold;
 }
 
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+section {
+    margin: 16px;
+    padding: 8px;
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
@@ -80,10 +78,6 @@ h1 {
 
 h2 {
     color: var(--secondary-color);
-}
-
-.socialmedia a {
-    text-decoration: none;
 }
 
 .hero {
@@ -98,7 +92,7 @@ h2 {
     height: auto;
 }
 
-h1 {
+h1.company-name {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -127,7 +121,6 @@ h1 {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     z-index: 1;
     border: 2px solid var(--secondary-color);
-
 }
 
 .hero article img {
@@ -208,12 +201,25 @@ h1 {
     transition: transform 0.3s ease;
 }
 
+.adventure-gallery img:hover {
+    transform: scale(1.05);
+}
+
+.adventure-gallery figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
 footer {
     background-color: var(--primary-color);
     color: #fff;
     padding: 20px;
-    text-align: center;
     margin-top: 20px;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 20px;
 }
 
 footer p {
@@ -234,4 +240,5 @@ footer nav.socialmedia {
 .socialmedia img {
     width: 30px;
     height: 30px;
+    transition: transform 0.3s ease;
 }
