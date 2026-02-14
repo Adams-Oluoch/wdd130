@@ -88,24 +88,20 @@
                       placeholder="Enter your email address" required>
                 </div>
 
-                <!-- Purpose Radio Buttons - WITH ID ATTRIBUTES ADDED -->
+                <!-- Purpose Radio Buttons -->
                 <div class="form-item radio-group">
                     <p>Message Purpose:</p>
-                    <label for="purpose-general">
-                        <input type="radio" id="purpose-general" name="purpose" value="general"
-                          checked>
-                        General Inquiry
-                    </label>
-                    <label for="purpose-reservation">
-                        <input type="radio" id="purpose-reservation" name="purpose"
-                          value="reservation">
-                        Reservation Question
-                    </label>
-                    <label for="purpose-suggestion">
-                        <input type="radio" id="purpose-suggestion" name="purpose"
-                          value="suggestion">
-                        Website Suggestion
-                    </label>
+
+                    <input type="radio" id="purpose-general" name="purpose" value="general" checked>
+                    <label for="purpose-general">General Inquiry</label>
+                    <br>
+
+                    <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+                    <label for="purpose-reservation">Reservation Question</label>
+                    <br>
+
+                    <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion">
+                    <label for="purpose-suggestion">Website Suggestion</label>
                 </div>
 
                 <!-- Message Textarea -->
@@ -115,7 +111,7 @@
                       placeholder="Type your message here..."></textarea>
                 </div>
 
-                <!-- Newsletter Checkbox - FIXED with id attribute -->
+                <!-- Newsletter Checkbox -->
                 <div class="form-item checkbox">
                     <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
                     <label for="newsletter">Please subscribe me to the monthly newsletter</label>
