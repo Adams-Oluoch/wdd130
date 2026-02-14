@@ -88,19 +88,22 @@
                       placeholder="Enter your email address" required>
                 </div>
 
-                <!-- Purpose Radio Buttons -->
+                <!-- Purpose Radio Buttons - WITH ID ATTRIBUTES ADDED -->
                 <div class="form-item radio-group">
                     <p>Message Purpose:</p>
-                    <label>
-                        <input type="radio" name="purpose" value="general" checked>
+                    <label for="purpose-general">
+                        <input type="radio" id="purpose-general" name="purpose" value="general"
+                          checked>
                         General Inquiry
                     </label>
-                    <label>
-                        <input type="radio" name="purpose" value="reservation">
+                    <label for="purpose-reservation">
+                        <input type="radio" id="purpose-reservation" name="purpose"
+                          value="reservation">
                         Reservation Question
                     </label>
-                    <label>
-                        <input type="radio" name="purpose" value="suggestion">
+                    <label for="purpose-suggestion">
+                        <input type="radio" id="purpose-suggestion" name="purpose"
+                          value="suggestion">
                         Website Suggestion
                     </label>
                 </div>
