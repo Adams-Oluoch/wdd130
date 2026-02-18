@@ -104,6 +104,23 @@ h1.company-name {
     z-index: 1;
 }
 
+.hero-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    background-color: rgba(26, 71, 42, 0.7);
+    padding: 20px 40px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 800px;
+    z-index: 2;
+}
+
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -365,6 +382,405 @@ h1.company-name {
 .checkbox input[type="checkbox"] {
     width: auto;
     margin: 0;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    margin: 60px 0;
+    padding: 40px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.newsletter-section h2 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 2.2rem;
+}
+
+.newsletter-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    border: 2px solid transparent;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--accent1-color);
+}
+
+.newsletter-btn {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    padding: 14px 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.newsletter-btn:hover {
+    background-color: #e5c158;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Call to Action Section */
+.cta-section {
+    text-align: center;
+    margin: 60px 0;
+    padding: 60px 40px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cta-section h2 {
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    border: 2px solid var(--primary-color);
+}
+
+.cta-button:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+/* Grid Purpose Section */
+.purpose-grid-section {
+    margin: 60px 0;
+    padding: 40px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.purpose-grid-section h2 {
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.grid-item {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 3px solid var(--accent1-color);
+}
+
+.grid-item h3 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.grid-item p {
+    color: var(--primary-color);
+    line-height: 1.6;
+}
+
+/* ===== TRIPS PAGE STYLES ===== */
+
+.page-title {
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 2.8rem;
+    margin: 40px 0;
+}
+
+/* Trips CTA */
+.trips-cta {
+    text-align: center;
+    margin: 40px 0;
+    padding: 40px;
+    background: linear-gradient(135deg, var(--accent1-color), #e5c158);
+    border-radius: 8px;
+}
+
+.trips-cta h2 {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.trips-cta p {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.trips-cta .cta-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: 2px solid var(--primary-color);
+}
+
+.trips-cta .cta-button:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+/* Trips Showcase Grid */
+.trips-showcase {
+    margin: 60px 0;
+}
+
+.trips-showcase h2 {
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.trips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.trip-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.trip-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.trip-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid var(--accent1-color);
+}
+
+.trip-info {
+    padding: 20px;
+}
+
+.trip-info h3 {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.trip-difficulty {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.trip-difficulty.beginner {
+    background-color: #4caf50;
+    color: white;
+}
+
+.trip-difficulty.intermediate {
+    background-color: #ff9800;
+    color: white;
+}
+
+.trip-difficulty.advanced {
+    background-color: #f44336;
+    color: white;
+}
+
+.trip-description {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.trip-details {
+    list-style: none;
+    padding: 0;
+}
+
+.trip-details li {
+    padding: 5px 0;
+    color: var(--primary-color);
+    border-bottom: 1px solid #eee;
+}
+
+.trip-details li:last-child {
+    border-bottom: none;
+}
+
+/* Trips Table */
+.trips-table-section {
+    margin: 60px 0;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.trips-table-section h2 {
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+.trips-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.trips-table thead {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.trips-table th {
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.trips-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    color: var(--primary-color);
+}
+
+.trips-table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.trips-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-heading {
+        font-size: 2rem;
+        padding: 15px 20px;
+        width: 90%;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .trips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trips-table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .newsletter-section,
+    .cta-section,
+    .trips-cta {
+        padding: 30px 20px;
+    }
+
+    .page-title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-heading {
+        font-size: 1.5rem;
+        padding: 10px 15px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
 }
 
 /* Submit Button */
